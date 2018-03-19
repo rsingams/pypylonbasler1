@@ -6,15 +6,15 @@ cd `dirname $0`
 #returns 0 when the user answered no
 #returns 1 when the user answered yes
 askNoYes() {
-	#local q="$1 (yes or no [y/n]?) : "
+	local q="$1 (yes or no [y/n]?) : "
 	while true; do
-	    #read -p "$q" yn
-	   # case $yn in
-	        #[Yy]* ) return 1; ;;
-	       # [Nn]* ) return 0; ;;
-	       # * ) #echo "Please answer yes or no.";;
-	    #esac
-		return 1;
+	    read -p "$q" yn
+	    case $yn in
+	        [Yy]* ) return 1; ;;
+	        [Nn]* ) return 0; ;;
+	        * ) #echo "Please answer yes or no.";;
+	    esac
+		#return 1;
 	done
 }
 
