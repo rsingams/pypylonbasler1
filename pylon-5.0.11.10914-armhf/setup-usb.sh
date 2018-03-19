@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#set -e
+set -e
 #cd `dirname $0`
 
 #returns 0 when the user answered no
