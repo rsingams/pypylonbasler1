@@ -1,7 +1,7 @@
 #!/bin/sh
 
-set -e
-cd `dirname $0`
+#set -e
+#cd `dirname $0`
 
 #returns 0 when the user answered no
 #returns 1 when the user answered yes
