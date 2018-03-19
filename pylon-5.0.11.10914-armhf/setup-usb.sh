@@ -11,10 +11,10 @@ askNoYes() {
 	    #read -p "$q" yn
 	    #case $yn in
 	        #[Yy]* ) return 1; ;;
-	       # [Nn]* ) return 0; ;;
-	        #* ) #echo "Please answer yes or no.";;
+	        #[Nn]* ) return 0; ;;
+	       # * ) echo "Please answer yes or no.";;
 	    #esac
-	    		return 1;
+			return 1;
 	done
 }
 
@@ -121,3 +121,4 @@ fi
 echo ""
 echo "Installation successful"
 echo ""
+
