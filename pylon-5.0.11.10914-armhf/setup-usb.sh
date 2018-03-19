@@ -9,12 +9,12 @@ askNoYes() {
 	#local q="$1 (yes or no [y/n]?) : "
 	while true; do
 	    #read -p "$q" yn
-	    #case $yn in
+	   # case $yn in
 	        #[Yy]* ) return 1; ;;
 	       # [Nn]* ) return 0; ;;
 	       # * ) #echo "Please answer yes or no.";;
 	    #esac
-	return 1;
+		return 1;
 	done
 }
 
